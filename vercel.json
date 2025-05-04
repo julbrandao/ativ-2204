@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "config/config.json",
+            "use": "@vercel/node"
+        }
+    ],
+
+    "routes": [
+        {
+            "src": "(.*)",
+            "dest": "config/config.json"
+        }
+    ]
+}
